@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94f1e136ec5ba1c43be6768a2c1d3ab7, type: 3}
+  m_Name: InputMap
+  m_EditorClassIdentifier: 
+  Type: 0
+  LeftStick:
+    Horizontal: 28
+    Vertical: 28
+    Press: 21
+    Inversion:
+      Horizontal: 0
+      Vertical: 0
+  RightStick:
+    Horizontal: 28
+    Vertical: 28
+    Press: 21
+    Inversion:
+      Horizontal: 0
+      Vertical: 0
+  DPadLeft: 28
+  DPadRight: 28
+  L2Analog: 28
+  R2Analog: 28
+  L1: 21
+  R1: 21
+  L2: 21
+  R2: 21
+  ButtonBottom: 21
+  ButtonRight: 21
+  ButtonTop: 21
+  ButtonLeft: 21
+  Start: 21
+  Select: 21
+  Extra1: 21
+  Extra2: 21
+  Extra3: 21
+  Extra4: 21
+  Extra5: 21
+  Extra6: 21
+  Extra7: 21
+  Extra8: 21
+  Extra9: 21
+  Extra10: 21
+  Extra11: 21
