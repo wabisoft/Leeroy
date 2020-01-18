@@ -10,39 +10,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94f1e136ec5ba1c43be6768a2c1d3ab7, type: 3}
-  m_Name: InputMap
+  m_Name: PlayStation4Wireless
   m_EditorClassIdentifier: 
-  Type: 0
+  Type: 1
   LeftStick:
-    Horizontal: 28
-    Vertical: 28
-    Press: 21
+    Horizontal: 0
+    Vertical: 2
+    Press: 10
     Inversion:
       Horizontal: 0
-      Vertical: 0
+      Vertical: 1
   RightStick:
-    Horizontal: 28
-    Vertical: 28
-    Press: 21
+    Horizontal: 3
+    Vertical: 6
+    Press: 11
+    Inversion:
+      Horizontal: 0
+      Vertical: 1
+  DPadAxes:
+    Horizontal: 7
+    Vertical: 8
     Inversion:
       Horizontal: 0
       Vertical: 0
-  DPadLeft: 28
-  DPadRight: 28
-  L2Analog: 28
-  R2Analog: 28
-  L1: 21
-  R1: 21
-  L2: 21
-  R2: 21
-  ButtonBottom: 21
-  ButtonRight: 21
-  ButtonTop: 21
-  ButtonLeft: 21
-  Start: 21
-  Select: 21
-  Extra1: 21
-  Extra2: 21
+  DPadButtons:
+    Left: 21
+    Down: 21
+    Right: 21
+    Up: 21
+  L2Analog: 4
+  R2Analog: 5
+  L1: 4
+  R1: 5
+  L2: 6
+  R2: 7
+  ButtonLeft: 0
+  ButtonBottom: 1
+  ButtonRight: 2
+  ButtonTop: 3
+  Start: 9
+  Select: 8
+  Extra1: 12
+  Extra2: 13
   Extra3: 21
   Extra4: 21
   Extra5: 21

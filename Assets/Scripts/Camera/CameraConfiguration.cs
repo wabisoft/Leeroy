@@ -6,30 +6,28 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class CameraConfiguration : MonoBehaviour
 {
-    public float YOffset;
-    public float ZOffset;
-    [Range(0.3f, 1)]
-    public float SmoothingTime;
-    [Range(1, 5)]
-    public float RotationSpeed;
-    public Transform Target;
+    [Range(0.5f, 5)]
+    public float RotationSpeed = 2;
+    [Range(0.1f, 1)]
+    public float ZoomSpeed = 0.1f;
+    [Range(0.1f, 1)]
+    public PlayerController Target;
+    public Sphvector3 Offset;
+    public float MinOffsetRadius = 10;
+    public float MaxOffsetRadius = 10;
     private CameraController cameraController;
-
-    private Vector3 offset;
-    public Vector3 Offset { get { return offset; } set { offset = value; } } // TODO: maybe calculate this on the fly from a more complicated principle
-    public float OffsetMagnitude {get; private set;}
+    private Vector3 smoothingVelocity;
 
     void Start()
     {
         cameraController = (cameraController) ?? GetComponent<CameraController>();
         Debug.Assert(cameraController != null);
-        offset = new Vector3(0, YOffset, ZOffset);
-        OffsetMagnitude = offset.magnitude;
+        transform.LookAt(Target.transform);
     }
 
-    void LateUpdate()
-    {
-        transform.LookAt(Target);
+    void LateUpdate() {
+        var targetPosition = Offset.ToVector3(Target.transform.position);
+        transform.position = targetPosition;
+        transform.LookAt(Target.transform.position);
     }
-
 }
