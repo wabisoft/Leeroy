@@ -32,7 +32,6 @@ public class PlayerController : InputListener
         transform.rotation = Quaternion.LookRotation(movement);
     }
 
-
     public override void OnDPad(float horizontal, float vertical) {
         OnLeftStick(horizontal, vertical);
     }
